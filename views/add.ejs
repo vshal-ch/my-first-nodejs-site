@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <main class="main-tab">
+      <div class="wrapper">
+        <h2 class="title">Add Feeling</h2>
+        <form action="/feelings" method="POST">
+          <div class="input-container">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="input" autocomplete="off" maxlength="14" required/>
+          </div>
+          <div class="input-container">
+            <label for="feeling">Feeling</label>
+            <textarea name="feeling" id="" cols="25" rows="6" class="input" maxlength="100" required></textarea>
+          </div>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

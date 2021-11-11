@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 140px auto 60px;
+  min-height: 100vh;
+}
+
+nav {
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.wrapper {
+  width: 85%;
+  padding-top: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-title h1 {
+  font-size: 2rem;
+  font-family: "Zen Old Mincho";
+  font-weight: 400;
+}
+
+.site-title p {
+  color: rgb(255, 55, 238);
+  font-size: 1.1rem;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.links a {
+  padding: 1rem 0;
+  display: grid;
+  place-items: center;
+  font-family: "Zen Old Mincho";
+  white-space: nowrap;
+  cursor: default;
+}
+
+.links a:active {
+  color: rgb(255, 55, 238);
+}
+
+.main-tab {
+  padding: 1rem 0;
+  display: grid;
+  place-items: center;
+  background-color: #333;
+}
+
+.main-tab .wrapper {
+  height: 100%;
+  color: #fff;
+  font-family: "Zen Old Mincho";
+}
+.wrapper .title {
+  font-size: 1.5rem;
+  color: rgb(255, 55, 238);
+}
+
+.feelings-list {
+  margin-top: 1rem;
+  list-style-position: outside;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.name {
+  color: rgb(255, 55, 238);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 55, 238);
+}
+
+footer .wrapper {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #222;
+  font-family: "Zen Old Mincho";
+}
+
+.about-text {
+  margin-top: 1rem;
+}
+
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 0 0.7rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 7px;
+}
+
+.input {
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+  padding: 10px 1rem;
+  font-family: "Zen Old Mincho";
+  transition: border 0.2s linear;
+  border-radius: 3px;
+}
+
+.input:focus {
+  border: 1px solid rgb(255, 55, 238);
+}
+
+button {
+  padding: 7px 1rem;
+  font-family: "Zen Old Mincho";
+  background-color: rgb(255, 55, 238);
+  color: #222;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}

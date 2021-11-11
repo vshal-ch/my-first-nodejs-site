@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+
+    <main class="main-tab">
+      <div class="wrapper">
+        <h2 class="title">Feelings</h2>
+        <ul class="feelings-list">
+          <% if(feelings.length>0){ feelings.forEach(feel =>{%>
+          <li class="feeling-item">
+            <p class="feeling-text"><%= feel.feeling %></p>
+            <p class="name">- <%= feel.name %></p>
+          </li>
+          <% }) } %>
+        </ul>
+      </div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
